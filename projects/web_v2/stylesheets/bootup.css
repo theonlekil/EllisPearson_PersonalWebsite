@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  background: #000;
+  color: #ffffff;
+  font-family: 'Garamond', serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+.terminal {
+  max-width: none;
+  margin: 30px 25px 25px 25px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.line {
+  white-space: pre-wrap;
+  margin: 2px 0;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.2em;
+  height: 1em;
+  background: #ffffff;
+  margin-left: 0.35em;
+  animation: blink 1s infinite;
+  vertical-align: text-bottom;
+}
+
+.error {
+  color: #ff4444;
+}
+
+.prompt {
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

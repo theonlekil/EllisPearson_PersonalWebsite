@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Segoe UI, sans-serif;
+}
+
+/* Fullscreen background */
+#background {
+    position: fixed;
+    background: url('your-image.jpg') center/cover no-repeat;
+    transition: filter 0.6s ease;
+    cursor: pointer;
+}
+
+/* Content (hidden by default) */
+#content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+    color: white;
+}
+
+/* When activated */
+#content.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#background.blurred {
+    filter: blur(10px) brightness(0.7);
+}

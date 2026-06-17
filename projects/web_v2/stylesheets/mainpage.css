@@ -1,0 +1,95 @@
+@font-face {
+  font-family:"Edit Undo Line Break";
+  src: url("font.ttf") format("truetype");
+}
+
+#wex, #edu, #pro {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.wex, .edu, .pro {
+    margin-bottom: 20px;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Garamond', serif;
+    font-size: 22px;
+    line-height: 1.5;
+    cursor: default;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.date {
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.body {
+    margin-left: 20px;
+    text-indent: -10px;
+    line-height: 1.6;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    font-family: "Edit Undo Line Break", system-ui;
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#mainbody {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.bar {
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#personal-txt {
+    margin-bottom: 20px;
+}
+
+#button-hold {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.button {
+    border: 2px solid transparent;
+    padding: 8px 16px;
+    cursor: pointer;
+    min-width: 120px;
+    text-align: center;
+}
+
+.button.active {
+    border: 2px solid #FFFFFF;
+}
