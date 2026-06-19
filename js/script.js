@@ -26,6 +26,23 @@ if (projectSlider && previousProjectButton && nextProjectButton) {
   let isProjectSliderMoving = false;
   const projectSlideDuration = 340;
 
+  const updateProjectSelection = () => {
+    const cards = Array.from(projectSlider.querySelectorAll(".project-card"));
+
+    cards.forEach((card) => card.classList.remove("is-selected"));
+
+    if (!cards.length) {
+      return;
+    }
+
+    const cardWidth = cards[0].getBoundingClientRect().width;
+    const gap = Number(getComputedStyle(projectSlider).columnGap.replace("px", "")) || 0;
+    const visibleCards = Math.max(1, Math.round((projectSlider.clientWidth + gap) / (cardWidth + gap)));
+    const selectedIndex = Math.min(cards.length - 1, Math.floor(visibleCards / 2));
+
+    cards[selectedIndex].classList.add("is-selected");
+  };
+
   const getProjectStep = () => {
     const cards = Array.from(projectSlider.querySelectorAll(".project-card"));
 
@@ -48,6 +65,7 @@ if (projectSlider && previousProjectButton && nextProjectButton) {
   };
 
   const finishProjectSlide = () => {
+    updateProjectSelection();
     isProjectSliderMoving = false;
     previousProjectButton.disabled = false;
     nextProjectButton.disabled = false;
@@ -90,4 +108,6 @@ if (projectSlider && previousProjectButton && nextProjectButton) {
 
   previousProjectButton.addEventListener("click", () => moveProjects(-1));
   nextProjectButton.addEventListener("click", () => moveProjects(1));
+  updateProjectSelection();
+  window.addEventListener("resize", updateProjectSelection);
 }

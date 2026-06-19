@@ -3,10 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>coding websites</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Website Coding | Ellis Pearson</title>
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
-<body>
-    
-</body>
+  <body class="project-detail-page">
+    <header class="site-header">
+      <a class="site-name" href="../index.html#top" aria-label="Ellis Pearson home">Ellis Pearson</a>
+
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#education">Education</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-hero-section" aria-labelledby="website-project-title">
+        <div class="section-inner">
+          <p class="eyebrow">Website Coding</p>
+          <div class="project-hero-grid">
+            <div>
+              <h1 id="website-project-title">Building My Portfolio Website</h1>
+              <p class="intro-copy">
+                This project shows the jump from my first personal website to the version you are viewing now. The aim was to make a clean, professional-looking webpage from which people can learn about me (with it acting as a mini-CV).
+              </p>
+            </div>
+
+            <div class="project-brief" aria-label="Project brief">
+              <div class="brief-box">
+                <span>Goal</span>
+                <strong>Make a website</strong>
+              </div>
+              <div class="brief-box problem-box">
+                <span>Problem</span>
+                <strong>I have no clue how to code</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="versions-title">
+        <div class="section-inner">
+          <p class="eyebrow">Two Builds</p>
+          <h2 id="versions-title">What Changed Between Versions</h2>
+
+          <div class="version-grid">
+            <article class="version-card">
+              <div class="version-preview terminal-preview" aria-hidden="true">
+                <span>[ system ] Booting portfolio</span>
+                <span>[ error ] Network unreachable</span>
+                <span>[ ready ] Welcome</span>
+              </div>
+              <div class="version-copy">
+                <h3>First Personal Website</h3>
+                <p>
+                  My first version was an experiment in getting something working. I used a boot-up screen, simple buttons, and hidden sections to learn the basics of HTML, CSS, and JavaScript. This took several weeks of failure (longer than it took to beat Malenia in Elden Ring) but eventually worked. However, it was rather a pain to use due to the prolonged waiting before the website would "load".
+                </p>
+                <a class="text-link" href="web_v2/index.html">View first version</a>
+              </div>
+            </article>
+
+            <article class="version-card">
+              <div class="version-preview current-preview" aria-hidden="true">
+                <img src="../assets/portfolio-code-snippet.png" alt="" />
+              </div>
+              <div class="version-copy">
+                <h3>Current Portfolio</h3>
+                <p>
+                  This version is more organised and easier to read. It uses clear sections, responsive layout, a project slider, stronger spacing, and contact links so the page works more like a real portfolio. It is also almost mobile-friendly.
+                </p>
+                <a class="text-link" href="../index.html#top">View current version</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section alt-section" aria-labelledby="thinking-title">
+        <div class="section-inner">
+          <p class="eyebrow">Thought Process</p>
+          <h2 id="thinking-title">How I Approached It</h2>
+
+          <div class="process-grid">
+            <article class="process-step">
+              <span>01</span>
+              <h3>Start With The Purpose</h3>
+              <p>I wanted the website to explain who I am, what I have done, and how someone could contact me without needing to search around.</p>
+            </article>
+
+            <article class="process-step">
+              <span>02</span>
+              <h3>Review other personal websites</h3>
+              <p>I reviewed an extensive selection of personal websites ranging from the highly complex <a href="https://dustinbrett.com/">Daedal OS</a> to simpler pages. From this I saw the common sections across these, curating my page to contain only the necessary parts.</p>
+            </article>
+
+            <article class="process-step">
+              <span>03</span>
+              <h3>Learn By Building</h3>
+              <p>I built the first version while learning the basics, then used the problems I noticed to decide what the next version needed to improve.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="changes-title">
+        <div class="section-inner">
+          <p class="eyebrow">Changes Made</p>
+          <h2 id="changes-title">Main Improvements</h2>
+
+          <div class="changes-list">
+            <article>
+              <h3>Structure</h3>
+              <p>Moved from a single experimental layout to a full portfolio with About, Experience, Education, Projects, and Contact sections.</p>
+            </article>
+            <article>
+              <h3>Design</h3>
+              <p>Replaced the heavy terminal style with a cleaner layout, calmer colours, more consistent spacing, and cards that are easier to scan.</p>
+            </article>
+            <article>
+              <h3>Interaction</h3>
+              <p>Added a mobile navigation menu, project slider controls, and a contact form so the page feels more complete and practical.</p>
+            </article>
+            <article>
+              <h3>Responsiveness</h3>
+              <p>Adjusted the layout for smaller screens so the website is usable (not good to use) on both desktop and mobile.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+  </body>
 </html>
